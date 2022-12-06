@@ -46,7 +46,7 @@ body {
 .header-title {
     display: flex;
     gap: 12px;
-    padding: 10px;
+    padding: 50px;
 }
 
 .header-title h1 {
@@ -95,11 +95,11 @@ body {
     flex: 0 0 auto;
     flex-flow: column nowrap;
     gap: 10px;
-    height: 75px;
+    height: 150px;
     overflow: hidden;
     padding: 20px;
     position: relative;
-    width: 300px;
+    width: 600px;
     max-width: 1200px;
     will-change: transform;
     overflow: auto;
@@ -135,7 +135,7 @@ textarea {
     gap: 12px;
     height: min-content;
     overflow: hidden;
-    padding: 0px;
+    padding: 10px;
     position: relative;
     width: 100%;
 }
