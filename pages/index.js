@@ -48,12 +48,15 @@ const Home = () => {
           <div className="header-subtitle">
             <div/>
             <div>
-            <Emoji symbol="💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡" label="idea"/>
+            <Emoji symbol="💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡" label="idea"/>
             </div>
-            <h2>Give a topic and I will make a thread for you!</h2>
-            <h2>WTF? yup, it's that simple.</h2>
+            <h2>First Present a topic, then:</h2>
+            <h2> <Emoji symbol="🤖" label="AI"/>Beep Boop...</h2>
+            <h2>you get a Twitter thread</h2>
+            <h2>WTF?</h2>
+            <h2>It's that simple.</h2>
             <div>
-            <Emoji symbol="💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡" label="idea"/>
+            <Emoji symbol="💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡" label="idea"/>
             </div>
           </div>
         </div>
