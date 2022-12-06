@@ -92,13 +92,16 @@ const Home = () => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
+          href="https://blockfather.xyz"
           target="_blank"
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <Image src={threadwtfLogo} alt="thread.wtf logo" />
+            <h3>
+              built  by  BlockFather
+            </h3>
+            <div><Emoji symbol="💡" label="idea"/></div>
           </div>
         </a>
       </div>
