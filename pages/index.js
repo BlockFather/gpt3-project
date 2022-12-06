@@ -94,7 +94,7 @@ const Home = () => {
         )}
         </div>
       </div>
-      <div className="badge-container grow">
+      {/*<div className="badge-container grow">
         <a
           href="https://blockfather.xyz"
           target="_blank"
@@ -108,7 +108,7 @@ const Home = () => {
             <div><Emoji symbol="💡" label="idea"/></div>
           </div>
         </a>
-      </div>
+      </div>*/}
     </div>
   );
 };
