@@ -62,7 +62,7 @@ const Home = () => {
           </div>
         </div>
         {/* Add this code here*/}
-        <div className="prompt-container">
+        {/*<div className="prompt-container">
           <textarea
             placeholder="start typing the topic for your latest twitter thread!"
             className="prompt-box"
@@ -91,7 +91,7 @@ const Home = () => {
               <p>{apiOutput}</p>
             </div>
           </div>
-        )}
+        )}*/}
         </div>
       </div>
       {/*<div className="badge-container grow">
