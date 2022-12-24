@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
 import threadwtfLogo from '../assets/threadwtfLogo.svg';
 import { useState } from 'react';
 import Emoji from '../componenets/emoji'
