@@ -3,7 +3,6 @@ import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
 import threadwtfLogo from '../assets/threadwtfLogo.svg';
 import { useState } from 'react';
-
 import Emoji from '../componenets/emoji'
 
 const Home = () => {
@@ -30,17 +29,17 @@ const Home = () => {
 
     setApiOutput(`${output.text}`);
     setIsGenerating(false);
-  } 
+  }
   
-
   const onUserChangedText = (event) => {
+    console.log(event.target.value);
     setUserInput(event.target.value);
   };
-  
+
   return (
     <div className="root">
       <div className="container">
-        <div className="header">
+      <div className="header">
           <div className="header-title">
             <h1>thread.wtf</h1>
             <h1><Image src={threadwtfLogo} alt="BlockFather did this" /></h1>
@@ -50,10 +49,10 @@ const Home = () => {
             <div>
             <Emoji symbol="💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡💡" label="idea"/>
             </div>
-            <h2>First, present a topic.</h2>
+            <h2>Give me an idea for a story</h2>
             <h2>Then:</h2>
             <h2> <Emoji symbol="🤖" label="AI"/>Beep Boop...</h2>
-            <h2>You get a Twitter thread.</h2>
+            <h2>You get a fun little story.</h2>
             <h2>WTF?</h2>
             <h2>It's that simple.</h2>
             <div>
@@ -61,14 +60,15 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* Add this code here*/}
-        {/*<div className="prompt-container">
+        ;
+        <div className="prompt-container">
           <textarea
-            placeholder="start typing the topic for your latest twitter thread!"
+            placeholder="start typing here"
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}
           />
+
           <div className="prompt-buttons">
             <a
               className={isGenerating ? 'generate-button loading' : 'generate-button'}
@@ -79,22 +79,22 @@ const Home = () => {
               </div>
             </a>
           </div>
-          {/* New code I added here */}
           {apiOutput && (
-          <div className="output">
-            <div className="output-header-container">
-              <div className="output-header">
-                <h3>Output</h3>
+            <div className="output">
+              <div className="output-header-container">
+                <div className="output-header">
+                  <h3>Output</h3>
+                </div>
+              </div>
+              <div className="output-content">
+                <p>{apiOutput}</p>
               </div>
             </div>
-            <div className="output-content">
-              <p>{apiOutput}</p>
-            </div>
-          </div>
-        )}*/}
+          )}
+          
         </div>
       </div>
-      {/*<div className="badge-container grow">
+      <div className="badge-container grow">
         <a
           href="https://blockfather.xyz"
           target="_blank"
@@ -108,7 +108,7 @@ const Home = () => {
             <div><Emoji symbol="💡" label="idea"/></div>
           </div>
         </a>
-      </div>*/}
+      </div>
     </div>
   );
 };
